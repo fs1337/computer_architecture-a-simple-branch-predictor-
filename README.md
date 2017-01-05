@@ -4,3 +4,10 @@ Branch Predictor Architecture
 Your design must consist of 2m 2-bit saturating counters indexed using m LSBs of each branch instruction. 
 Each 2-bit saturating predictor starts in the 11 (Predict Taken with High Confidence) state and is updated as 
 per the finite state machine discussed in Lecture 11. The value of m is specified in a config file config.txt. 
+
+steps to run the codes:
+> make
+
+> ./branchsimulator.out cacheconfig.txt trace.txt
+
+It will output: trace.txt.out in the same directory.
